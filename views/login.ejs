@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title><%= title  %></title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://localhost:3000/stylesheets/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://localhost:3000/stylesheets/index.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="modal-dialog text-center">
+      <div class="col-sm-12 main-section">
+        <div class="modal-content">
+          <% if(message) { %>
+            <div class="alert alert-danger" role="alert">
+              <%= message %>
+            </div>
+          <%}%>
+          <form class="form-signin" action="/login" method="POST">
+            <div class="text-center mb-4">
+              <img class="mb-4" src="http://localhost:3000/images/logo.png" alt="" width="300" height="120">
+              <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12">
+                <div class="form-label-group">
+                  <input type="text" name="cpf" id="inputEmail" class="form-control" placeholder="CPF" required autofocus> <br>
+                </div>
+              </div>
+                <div class="col-md-12">
+                  <div class="form-label-group">
+                    <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Senha " required> <br>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                    <div>
+                      <a href="#">Esqueceu a senha?</a> <br> <br>
+                    </div>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+                <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2018</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://localhost:3000/javascripts/jquery-slim.min.js"></script>
+    <script src="http://localhost:3000/javascripts/popper.min.js"></script>
+    <script src="http://localhost:3000/javascripts/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
+
+#logo {
+    font-family: 'Noto Sans TC', sans-serif;
+    width: auto;
+    height: auto;
+    color: #34b888;
+}
+
+.consultas {
+  font-family: 'Noto Sans TC', sans-serif;
+  width: auto;
+  height: auto;
+  color: #008B8B;
+}
+
+body {
+    padding-top: 65px;
+}
+
+body h5{
+  color: #008B8B;
+}
+
+body h6{
+  color: black;
+}
+
+body label {
+  color: black;
+}
